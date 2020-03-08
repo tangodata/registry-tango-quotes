@@ -4,7 +4,7 @@ backend:
   name: github
   branch: master
   repo: tangodata/registry-tango-quotes
-  site_domain: tangodata.github.io
+  site_domain: tangodata.netlify.com
   
 #site_url: https://tangodata.github.io/registry-tango-quotes
 
