@@ -3,4 +3,4 @@ A crowdsourced list of Quotable Tango Quotes
 
 [Admin Page](./admin/)
 
-[Info Page](./source/ABOUT/)
+[About Page](./source/ABOUT.html)
