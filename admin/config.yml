@@ -6,7 +6,7 @@ backend:
   repo: tangodata/registry-tango-quotes
   site_domain: tangodata.github.io
   
-site_url: https://tangodata.github.io/registry-tango-quotes
+#site_url: https://tangodata.github.io/registry-tango-quotes
 
 publish_mode: editorial_workflow
 media_folder: "source/uploads"
