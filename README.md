@@ -5,4 +5,4 @@ A crowdsourced list of Quotable Tango Quotes
 
 [About Page](./source/ABOUT.html)
 
-[blog](./source/posts/)
+[blog](./source/posts/2020-03-08-first-post.html)
