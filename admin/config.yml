@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
   
-site_url: https://example.com  
+site_url: https://tangodata.github.io/registry-tango-quotes
 
 publish_mode: editorial_workflow
 media_folder: "source/uploads"
