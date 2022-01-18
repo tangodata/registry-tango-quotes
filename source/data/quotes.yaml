@@ -1,6 +1,11 @@
 quotesdata:
 
 -
+  title: quote0
+  quote: A rain in Spain stays mainly
+  author: Polish Cowboy
+
+-
   title: quote1
   quote: The rain in spain stays mainly in the plains
   author: Mark Twain
