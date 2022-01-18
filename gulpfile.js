@@ -8,9 +8,11 @@ const data = require('gulp-data')
 const yaml = require('gulp-yaml')
 const rename = require('gulp-rename')
 const frontmatter = require('gulp-front-matter')
+const del = require('del')
 
 //=============================
 const SOURCE = 'source/**'
+const PUBLIC = 'public'
 const DESTINATION = 'release'
 //=============================S
 
@@ -40,6 +42,13 @@ const config_frontmatter = {
 }
 
 //=============================
+
+function cleantask(cb) {
+  return del([
+    DESTINATION+'/**',
+    '!'+DESTINATION,
+  ])
+}
 
 function jstask(cb) {
   return src(SOURCE+'/*.js')
@@ -75,9 +84,21 @@ function yamltask(cb) {
   .pipe(dest(DESTINATION))
 }
 
-exports.default = parallel(
-  jstask,
-  pugtask,
-  mdtask,
-  yamltask,
+function publictask(cb) {
+  return src(PUBLIC+'/**/*')
+  .pipe(dest(DESTINATION))
+}
+
+exports.default =
+series(
+  cleantask,
+  parallel(
+    jstask,
+    pugtask,
+    mdtask,
+    yamltask,
+  ),
+  publictask,
 )
+
+exports.clean = cleantask
