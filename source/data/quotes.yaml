@@ -1,0 +1,54 @@
+quotesdata:
+
+-
+  title: quote1
+  quote: The rain in spain stays mainly in the plains
+  author: Mark Twain
+
+-
+  title: quote2
+  quote: To be or not to be, that is the "question"
+  author: Jonathon author
+
+-
+  title: quote3
+  quote: Hello! is it me, you're looking for?
+  author: Lionel Ritchie
+
+
+members:
+  - John McClaine
+  - Richard Pfeiffer
+
+ballplayers:
+  - [name , hr, avg ]
+  - [Jimmy, 54, 0.23]
+  - [Sammy, 51, 0.20]
+
+footballers:
+- [name        , hr, avg  ]
+- [Mark McGwire, 65, 0.278]
+- [Sammy Sosa  , 63, 0.288]
+
+# Another set of data
+notes1: >+
+  Do you
+    like this
+
+notes2: |-
+  Bet you want
+      to know
+         all like me
+
+note3:
+  This is an
+    unquotes lines
+
+
+note4: 0xC
+note5: 12.31e+02
+note6: 2/4/2022
+note7: false
+note8: 2022-02-11T04:31:31.2Z
+
+

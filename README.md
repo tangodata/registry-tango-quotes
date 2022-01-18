@@ -1,8 +1,28 @@
 # registry-tango-quotes
+
 A crowdsourced list of Quotable Tango Quotes
 
-[Admin Page](./admin/)
+## Tech Stack
 
-[About Page](./source/ABOUT.html)
+Gulp
 
-[blog](./source/posts/2020-03-08-first-post.html)
+## Source Formats
+
+JS, PUG, Markdown, YAML
+
+## Release Formats
+
+JS, HTML, JSON
+
+## Build Command
+
+yarn start
+
+Files from "Source" directory will be converted
+and placed in "Release" directory
+
+## Github Deploy
+
+When repo is pushed, it runs the "start" script to
+create latest versions of the files for release.
+
