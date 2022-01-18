@@ -15,6 +15,11 @@ quotesdata:
   quote: Hello! is it me, you're looking for?
   author: Lionel Ritchie
 
+-
+  title: quote4
+  quote: Summer Loving Had Me a Blast
+  author: Frankie Avalon
+
 
 members:
   - John McClaine
