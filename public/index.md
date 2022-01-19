@@ -5,7 +5,7 @@ layout: default
 
 # Registry Tango Quotes
 
-Some crowd sourced data,
+A crowdsourced list of Quotable Tango Quotes
 
 ---
 ## Data Sets
@@ -15,8 +15,8 @@ Some crowd sourced data,
 
 
 ---
+## More Info
 
 - [About this site](./about)
 - [Awesome](./awesome)
-
 
