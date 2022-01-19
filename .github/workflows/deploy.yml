@@ -7,6 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
+    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
 
@@ -19,9 +20,9 @@ jobs:
 
 
     - name: Node Environment 🔧
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2
       with:
-        node-version: 12
+        node-version: 16
 
 
     - name: Build Static Site 🔧
@@ -31,12 +32,13 @@ jobs:
 
 
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@3.7.1
+      uses: JamesIves/github-pages-deploy-action@4.2.2
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: release
-        CLEAN: true
-        COMMIT_MESSAGE: 'Publishing'
+        branch: gh-pages
+        folder: release
+        commit-message: 'Publish'
+        single-commit: true
+      #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   CLEAN: true
       #   JEKYLL_SITE: NO
       #   CNAME: www.kaceong.com

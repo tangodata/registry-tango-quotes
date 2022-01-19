@@ -5,4 +5,4 @@ layout: default
 
 # About
 
-This site is strange. Do you know?
+Compiled by the TangoData curatorial team.

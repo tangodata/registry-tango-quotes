@@ -5,7 +5,8 @@ layout: default
 
 # Registry Tango Quotes
 
-Some crowd source quotes
+Some crowd source quotes.
+Designed to be nice.
 
 ---
 ## Data Sets
