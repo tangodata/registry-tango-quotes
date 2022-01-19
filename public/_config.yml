@@ -1,4 +1,10 @@
 title: TangoData
 description: repository data
-theme: jekyll-theme-minimal
+theme: jekyll-theme-slate
 future: true
+google_analytics:
+show_downloads: false
+
+github:
+  zip_url:
+  another_url:

@@ -10,6 +10,9 @@ const rename = require('gulp-rename')
 const frontmatter = require('gulp-front-matter')
 const del = require('del')
 
+//const converttask = require('./scripts/gulp.convert')
+
+
 //=============================
 const SOURCE = 'source/**'
 const PUBLIC = 'public'
@@ -50,6 +53,23 @@ function cleantask(cb) {
   ])
 }
 
+function servetask(cb) {
+  return cb()
+}
+
+function styletask(cb) {
+  return src(SOURCE+'/*.scss')
+  .pipe(sass().on('error', sass.logError))
+  .pipe(concat('dist.css'))
+  .pipe(dest(DESTINATION))
+}
+
+function scripttask(cb) {
+  return src(SOURCE+'/*.js')
+  .pipe(concat('dist.js'))
+  .pipe(dest(DESTINATION))
+}
+
 function jstask(cb) {
   return src(SOURCE+'/*.js')
   .pipe(prettier(config_prettier))
@@ -70,14 +90,6 @@ function mdtask(cb) {
   .pipe(dest(DESTINATION))
 }
 
-
-/*
-.pipe(data((file) => {
-  return { 'foo': file.path }
-}))
-*/
-
-
 function yamltask(cb) {
   return src(SOURCE+'/*.yaml')
   .pipe(yaml(config_yaml))
@@ -89,6 +101,8 @@ function publictask(cb) {
   .pipe(dest(DESTINATION))
 }
 
+exports.clean = cleantask
+
 exports.default =
 series(
   cleantask,
@@ -97,8 +111,10 @@ series(
     pugtask,
     mdtask,
     yamltask,
+    //converttask,
   ),
   publictask,
 )
 
-exports.clean = cleantask
+//exports.convert = converttask
+

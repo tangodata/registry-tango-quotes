@@ -1,12 +1,11 @@
 ---
-title: what
+title: Home Page
 layout: default
 ---
 
 # Registry Tango Quotes
 
-Some crowd source quotes.
-Designed to be nice.
+Some crowd sourced data,
 
 ---
 ## Data Sets
@@ -17,6 +16,6 @@ Designed to be nice.
 
 ---
 
-- [About this site](./about/)
+- [About this site](./about)
 
 
