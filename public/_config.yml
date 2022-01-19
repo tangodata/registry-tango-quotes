@@ -1,6 +1,6 @@
 title: TangoData
 description: open data repository
-theme: jekyll-theme-tactile
+theme: minima
 future: true
 google_analytics:
 show_downloads: false
@@ -8,3 +8,6 @@ show_downloads: false
 github:
   zip_url:
   another_url:
+
+minima:
+  skin: dark
