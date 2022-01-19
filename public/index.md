@@ -17,5 +17,6 @@ Some crowd sourced data,
 ---
 
 - [About this site](./about)
+- [Awesome](./awesome)
 
 
