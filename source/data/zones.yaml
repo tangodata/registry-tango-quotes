@@ -1,0 +1,30 @@
+-
+  name: Singapore
+  iatacode: sin
+  isocode: sg
+
+-
+  name: Hong Kong
+  iatacode: hkg
+  isocode: hk
+
+-
+  name: Taipei
+  iatacode: tpe
+  isocode: tw
+
+-
+  name: Tokyo
+  iatacode: tko
+  isocode: jp
+
+-
+  name: Seoul
+  iatacode: seo
+  isocode: kr
+
+-
+  name: Kuala Lumpur
+  iatacode: kul
+  isocode: my
+

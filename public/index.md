@@ -12,6 +12,7 @@ Designed to be nice.
 ## Data Sets
 
 - [Quotes JSON](./data/quotes.json)
+- [Zones JSON](./data/zones.json)
 
 
 ---
