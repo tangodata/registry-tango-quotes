@@ -1,0 +1,14 @@
+title: TangoData
+description: open data repository
+theme: minima
+future: true
+google_analytics:
+show_downloads: false
+
+github:
+  zip_url:
+  another_url:
+
+header_pages:
+  - about.md
+  - awesome.md

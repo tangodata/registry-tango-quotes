@@ -1,0 +1,80 @@
+{
+  "quotesdata": [
+    {
+      "title": "quote0",
+      "quote": "A rain in Spain stays mainly",
+      "author": "Polish Cowboy"
+    },
+    {
+      "title": "quote1",
+      "quote": "The rain in spain stays mainly in the plains",
+      "author": "Mark Twain"
+    },
+    {
+      "title": "quote2",
+      "quote": "To be or not to be, that is the \"question\"",
+      "author": "Jonathon author"
+    },
+    {
+      "title": "quote3",
+      "quote": "Hello! is it me, you're looking for?",
+      "author": "Lionel Ritchie"
+    },
+    {
+      "title": "quote4",
+      "quote": "Summer Loving Had Me a Blast",
+      "author": "Frankie Avalon"
+    },
+    {
+      "title": "quote5",
+      "quote": "lets have a party",
+      "author": "Elvis Presley"
+    }
+  ],
+  "members": [
+    "John McClaine",
+    "Richard Pfeiffer"
+  ],
+  "ballplayers": [
+    [
+      "name",
+      "hr",
+      "avg"
+    ],
+    [
+      "Jimmy",
+      54,
+      0.23
+    ],
+    [
+      "Sammy",
+      51,
+      0.2
+    ]
+  ],
+  "footballers": [
+    [
+      "name",
+      "hr",
+      "avg"
+    ],
+    [
+      "Mark McGwire",
+      65,
+      0.278
+    ],
+    [
+      "Sammy Sosa",
+      63,
+      0.288
+    ]
+  ],
+  "notes1": "Do you\n  like this\n\n",
+  "notes2": "Bet you want\n    to know\n       all like me",
+  "note3": "This is an unquotes lines",
+  "note4": 12,
+  "note5": 1231,
+  "note6": "2/4/2022",
+  "note7": false,
+  "note8": "2022-02-11T04:31:31.200Z"
+}
