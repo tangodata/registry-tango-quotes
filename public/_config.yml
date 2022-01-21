@@ -9,5 +9,6 @@ github:
   zip_url:
   another_url:
 
-minima:
-  skin: dark
+header_pages:
+  - about.md
+  - awesome.md

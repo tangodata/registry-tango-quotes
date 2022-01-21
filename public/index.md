@@ -19,4 +19,5 @@ A crowdsourced list of Quotable Tango Quotes
 
 - [About this site](./about)
 - [Awesome](./awesome)
+- [Cyber](./cyber)
 

@@ -1,14 +1,17 @@
 const { src, dest, series, parallel } = require('gulp')
+const debug = require('gulp-debug')
+const yaml = require('gulp-yaml')
 const pug = require('gulp-pug')
 const htmltidy = require('gulp-htmltidy')
 const prettier = require('gulp-prettier')
 const markdown = require('gulp-markdown')
 const uglify = require('gulp-uglify')
 const data = require('gulp-data')
-const yaml = require('gulp-yaml')
 const rename = require('gulp-rename')
 const frontmatter = require('gulp-front-matter')
 const del = require('del')
+const swagger = require('gulp-swagger')
+const ajv = require('gulp-ajv')
 
 //const converttask = require('./scripts/gulp.convert')
 
@@ -101,7 +104,22 @@ function publictask(cb) {
   .pipe(dest(DESTINATION))
 }
 
+function validatetask(cb) {
+  return src('test/zones.json')
+  .pipe(debug({title: 'unicorn:'}))
+  .pipe(ajv('test/zones.schema.json'))
+  .pipe(debug({title: 'unicorn:'}))
+}
+
+function swaggertask(cb) {
+  return src('test/api.yaml')
+  .pipe(swagger('test/api.schema.json'))
+  .pipe(dest(DESTINATION))
+}
+
 exports.clean = cleantask
+exports.validate = validatetask
+exports.swagger = swaggertask
 
 exports.default =
 series(

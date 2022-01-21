@@ -1,0 +1,13 @@
+{
+  "type": "array",
+  "properties": {
+    "name": {"type": "string"},
+    "iatacode": {"type": "string"},
+    "isocode": {"type": "string"},
+    "longname": {"type": "string"},
+    "pop": {"type": "integer"}
+  },
+  "required": [ "name","iatacode","isocode"
+  ]
+}
+
